@@ -1,0 +1,56 @@
+//Bold
+@font-face {
+  font-family: proximanova_bold;
+  src: url(/assets/fonts/proximanova-bold.eot);
+  src: url(/assets/fonts/proximanova-bold.eot#iefix),
+       url(/assets/fonts/proximanova-bold.woff),
+       url(/assets/fonts/proximanova-bold.ttf),
+       url(/assets/fonts/proximanova-bold.svg#proxima_novabold);
+}
+
+//Semibold
+@font-face {
+  font-family: proximanova_semibold;
+  src: url(/assets/fonts/proximanova-sbold.eot);
+  src: url(/assets/fonts/proximanova-sbold.eot#iefix),
+       url(/assets/fonts/proximanova-sbold.woff),
+       url(/assets/fonts/proximanova-sbold.ttf),
+       url(/assets/fonts/proximanova-sbold.svg#proximanova-semibold);
+}
+
+//Regular
+@font-face {
+  font-family: proximanova_reg;
+  src: url(/assets/fonts/proximanova-reg.eot);
+  src: url(/assets/fonts/proximanova-reg.eot#iefix),
+       url(/assets/fonts/proximanova-reg.woff),
+       url(/assets/fonts/proximanova-reg.ttf),
+       url(/assets/fonts/proximanova-reg.svg#proxima_novaregular);
+}
+
+//Light
+@font-face {
+  font-family: proximanova_light;
+  src: url(/assets/fonts/proximanova-light-webfont.eot);
+  src: url(/assets/fonts/proximanova-light-webfont.eot#iefix),
+       url(/assets/fonts/proximanova-light-webfont.woff),
+       url(/assets/fonts/proximanova-light-webfont.ttf),
+       url(/assets/fonts/proximanova-light-webfont.svg#proxima_novalight);
+}
+
+//Thin
+@font-face {
+  font-family: proximanova_thin;
+  src: url(/assets/fonts/proximanova-thin-webfont.eot);
+  src: url(/assets/fonts/proximanova-thin-webfont.eot#iefix),
+       url(/assets/fonts/proximanova-thin-webfont.woff),
+       url(/assets/fonts/proximanova-thin-webfont.ttf),
+       url(/assets/fonts/proximanova-thin.svg#proxima_novathin);
+}
+
+
+//dingbats
+@font-face {
+  font-family: little_lord_leroy;
+  src: url(/assets/fonts/LittleLordFontleroyNF.ttf);
+}

@@ -1,0 +1,22 @@
+$steel_blue: #6e8ea9;
+
+body {
+  font-family: proximanova_reg;
+
+  h1, h2 {
+    font-family: proximanova_bold;
+  }
+
+  a {
+    color: $steel_blue;
+    text-decoration: none;
+
+    &:visited{
+      color: $steel_blue;
+    }
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

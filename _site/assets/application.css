@@ -1,0 +1,76 @@
+@font-face {
+  font-family: proximanova_bold;
+  src: url(/assets/fonts/proximanova-bold.eot);
+  src: url(/assets/fonts/proximanova-bold.eot#iefix), url(/assets/fonts/proximanova-bold.woff), url(/assets/fonts/proximanova-bold.ttf), url(/assets/fonts/proximanova-bold.svg#proxima_novabold); }
+@font-face {
+  font-family: proximanova_semibold;
+  src: url(/assets/fonts/proximanova-sbold.eot);
+  src: url(/assets/fonts/proximanova-sbold.eot#iefix), url(/assets/fonts/proximanova-sbold.woff), url(/assets/fonts/proximanova-sbold.ttf), url(/assets/fonts/proximanova-sbold.svg#proximanova-semibold); }
+@font-face {
+  font-family: proximanova_reg;
+  src: url(/assets/fonts/proximanova-reg.eot);
+  src: url(/assets/fonts/proximanova-reg.eot#iefix), url(/assets/fonts/proximanova-reg.woff), url(/assets/fonts/proximanova-reg.ttf), url(/assets/fonts/proximanova-reg.svg#proxima_novaregular); }
+@font-face {
+  font-family: proximanova_light;
+  src: url(/assets/fonts/proximanova-light-webfont.eot);
+  src: url(/assets/fonts/proximanova-light-webfont.eot#iefix), url(/assets/fonts/proximanova-light-webfont.woff), url(/assets/fonts/proximanova-light-webfont.ttf), url(/assets/fonts/proximanova-light-webfont.svg#proxima_novalight); }
+@font-face {
+  font-family: proximanova_thin;
+  src: url(/assets/fonts/proximanova-thin-webfont.eot);
+  src: url(/assets/fonts/proximanova-thin-webfont.eot#iefix), url(/assets/fonts/proximanova-thin-webfont.woff), url(/assets/fonts/proximanova-thin-webfont.ttf), url(/assets/fonts/proximanova-thin.svg#proxima_novathin); }
+@font-face {
+  font-family: little_lord_leroy;
+  src: url(/assets/fonts/LittleLordFontleroyNF.ttf); }
+body {
+  font-family: proximanova_reg; }
+  body h1, body h2 {
+    font-family: proximanova_bold; }
+  body a {
+    color: #6e8ea9;
+    text-decoration: none; }
+    body a:visited {
+      color: #6e8ea9; }
+    body a:hover {
+      text-decoration: underline; }
+
+.card {
+  width: 800px;
+  margin: 20px auto; }
+  .card table {
+    text-align: center;
+    width: 100%; }
+    .card table img {
+      width: 300px; }
+    .card table h1, .card table h2, .card table h3 {
+      display: inline-block;
+      margin: 0; }
+    .card table h1 {
+      font-size: 5em; }
+    .card table h2 {
+      font-size: 4em; }
+    .card table .amp {
+      font-family: little_lord_leroy, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+      font-style: italic;
+      font-weight: normal; }
+    .card table .point {
+      font-family: little_lord_leroy, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+      font-weight: lighter;
+      font-size: 10em;
+      margin: -60px; }
+    .card table tr:nth-child(1) td {
+      vertical-align: bottom; }
+    .card table tr:nth-child(2) td {
+      vertical-align: top; }
+    .card table .date {
+      width: 100%; }
+  .card ul {
+    text-align: center;
+    width: 100%;
+    display: table;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .card ul li {
+      display: table-cell; }
+  .card .links {
+    margin: 20px; }
