@@ -1,35 +1,19 @@
-
 .card {
   width: 800px;
   margin: 20px auto;
 
   table {
+    color: #222426;
     text-align: center;
     width: 100%;
 
     img {
       width: 300px;
     }
-    h1, h2, h3 {
-      display: inline-block;
-      margin: 0;
-    }
     h1 {
       font-size: 5em;
-    }
-    h2 {
-      font-size: 4em;
-    }
-    .amp {
-      font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-      font-style: italic;
-      font-weight: normal;
-    }
-    .point {
-      font-family: little_lord_leroy, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-      font-weight: lighter;
-      font-size: 10em;
-      margin: -60px;
+      display: inline-block;
+      margin: 0;
     }
     tr:nth-child(1) {
       td {
@@ -41,25 +25,7 @@
         vertical-align: top;
       }
     }
-    .date {
-      width: 100%;
-    }
-  }
-
-  ul {
-    text-align: center;
-    width: 100%;
-    display: table;
-    list-style-type: none;
-    padding:0;
-    margin:0;
-
-    li {
-      display: table-cell;
-    }
-  }
-  .links {
-    margin: 20px;
   }
 
 }
+

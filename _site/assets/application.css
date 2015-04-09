@@ -21,6 +21,28 @@
 @font-face {
   font-family: little_lord_leroy;
   src: url(/assets/fonts/LittleLordFontleroyNF.ttf); }
+ul.table-list {
+  text-align: center;
+  width: 100%;
+  display: table;
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+  ul.table-list li {
+    display: table-cell; }
+ul.site-links {
+  table-layout: fixed;
+  margin: 15px 0; }
+ul.date-list .point {
+  font-family: little_lord_leroy, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-weight: lighter;
+  font-size: 10em;
+  margin: -60px; }
+ul.title-list .amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: normal; }
+
 body {
   font-family: proximanova_reg; }
   body h1, body h2 {
@@ -32,45 +54,48 @@ body {
       color: #6e8ea9; }
     body a:hover {
       text-decoration: underline; }
+  body #main_content {
+    width: 800px;
+    margin: 20px auto; }
+
+.header .top-bar {
+  width: 100%; }
+  .header .top-bar img {
+    width: 90px; }
+  .header .top-bar .title .list-container {
+    display: inline-block;
+    color: #222426; }
+  .header .top-bar .title .names {
+    width: 230px;
+    top: 13px;
+    position: relative; }
+    .header .top-bar .title .names ul li:nth-child(1) {
+      text-align: right; }
+  .header .top-bar .title .date {
+    width: 240px;
+    float: right; }
 
 .card {
   width: 800px;
   margin: 20px auto; }
   .card table {
+    color: #222426;
     text-align: center;
     width: 100%; }
     .card table img {
       width: 300px; }
-    .card table h1, .card table h2, .card table h3 {
+    .card table h1 {
+      font-size: 5em;
       display: inline-block;
       margin: 0; }
-    .card table h1 {
-      font-size: 5em; }
-    .card table h2 {
-      font-size: 4em; }
-    .card table .amp {
-      font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-      font-style: italic;
-      font-weight: normal; }
-    .card table .point {
-      font-family: little_lord_leroy, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
-      font-weight: lighter;
-      font-size: 10em;
-      margin: -60px; }
     .card table tr:nth-child(1) td {
       vertical-align: bottom; }
     .card table tr:nth-child(2) td {
       vertical-align: top; }
-    .card table .date {
-      width: 100%; }
-  .card ul {
-    text-align: center;
-    width: 100%;
-    display: table;
-    list-style-type: none;
-    padding: 0;
-    margin: 0; }
-    .card ul li {
-      display: table-cell; }
-  .card .links {
-    margin: 20px; }
+
+.directions .venue .title {
+  padding-left: 5px; }
+.directions .venue .description {
+  display: inline-block;
+  float: right;
+  width: 45%; }

@@ -1,0 +1,40 @@
+ul{
+
+  &.table-list {
+    text-align: center;
+    width: 100%;
+    display: table;
+    list-style-type: none;
+    padding:0;
+    margin:0;
+
+    li {
+      display: table-cell;
+    }
+  }
+
+  &.site-links {
+    table-layout: fixed;
+    margin: 15px 0;
+  }
+
+  &.date-list {
+    .point {
+      font-family: little_lord_leroy, Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+      font-weight: lighter;
+      font-size: 10em;
+      margin: -60px;
+    }
+  }
+
+  &.title-list {
+    .amp {
+      font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+
+}
+
+

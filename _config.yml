@@ -6,7 +6,7 @@ timezone: America/Toronto
 exclude: ["Gemfile", "Gemfile.lock"]
 
 future: true
-permalink: :title
+permalink: /:title
 relative_permalinks: false
 
 markdown: redcarpet

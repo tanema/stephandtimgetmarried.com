@@ -4,37 +4,41 @@ title: Home
 ---
 
 <div class="card">
+  <a href="/">
   <table>
     <tr>
       <td rowspan='2'>
         <img src="/assets/images/icon.png"/>
       </td>
       <td>
-        <ul>
-          <li><h1>Steph</h1></li>
-          <li><h1 class="amp">&</h1></li>
-          <li><h1>Tim</h1></li>
-        </ul>
+        {% include stephandtim.html %}
       </td>
     </tr>
     <tr>
       <td>
-        <ul>
-          <li><h1>07</h1></li>
-          <li><h1 class="point">.</h1></li>
-          <li><h1>16</h1></li>
-          <li><h1 class="point">.</h1></li>
-          <li><h1>16</h1></li>
-        </ul>
+        {% include date.html %}
       </td>
     </tr>
   </table>
+  </a>
   <hr/>
-  <ul class="links">
-    <li><a href="">Us</a></li>
-    <li><a href="">Pictures</a></li>
-    <li><a href="">RSVP</a></li>
-    <li><a href="">Registry</a></li>
-    <li><a href="">Directions</a></li>
-  </ul>
+  {% include links.html %}
 </div>
+
+<div id="main_content">
+  <p>
+    Welcome to our wedding website. You can use these links to navigate the website
+    and learn more about us and our wedding.
+  </p>
+  <p>
+    If you are looking to RSVP you can click <a href="/rsvp">this link.</a>
+  </p>
+  <p>
+    If you are looking for our Registry(s) you can click <a href="/registry">this link.</a> 
+  </p>
+  </p>
+  <p>
+    If you are looking for directions to the wedding you can click <a href="/directions">this link.</a> 
+  </p>
+</div>
+
