@@ -8,4 +8,3 @@ ruby '2.1.2'
 gem 'github-pages'
 gem 'sass'
 
-gem 'foreman'     # "foreman start" our Procfile
