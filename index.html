@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +15,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Photo modal -->
+    <link href="css/ekko-lightbox.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
@@ -46,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Our Logo</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -65,7 +70,10 @@
                         <a class="page-scroll" href="#registry">Registry</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#directions">Where To Go</a>
+                        <a class="page-scroll" href="#venue">Venue</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#where_to_stay">Where To Stay</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#faq">FAQ</a>
@@ -121,38 +129,21 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+              {% for image in site.data.gallery.images %}
+              <div class="col-sm-4">
+                <a href="{{ site.data.gallery.imagefolder }}/{{ image.name }}" 
+                  data-toggle="lightbox" 
+                  data-gallery="usgallery" 
+                  data-title="{{ image.text }}" 
+                  data-parent="">
+                    <img src="{{ site.data.gallery.imagefolder }}/{{ image.name }}" class="img-responsive">
+                </a>
+              </div>
+              {% endfor %}
             </div>
+
         </div>
     </section>
 
@@ -189,7 +180,7 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
         </div>
     </section>
 
-    <section id="directions" class="bg-light-gray">
+    <section id="venue" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -198,10 +189,9 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                 </div>
             </div>
             <div class="row">
-              <div class="col-sm-5 col-sm-offset-1">
-                <h1 class="title">The Venue</h1>
+              <div class="col-sm-4">
+                <h1 class="title">Archeo</h1>
                 <div class="description">
-                  <h1 class="title">Archeo</h1>
                   <p>
                     This will be where I describe where there is parking, and what are common ways
                     to get here.
@@ -211,27 +201,34 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                   </p>
                 </div>
               </div>
-              <iframe class="map" 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.516334902473!2d-79.359536!3d43.650684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x822db641d29de9dc!2sArcheo!5e0!3m2!1sen!2sca!4v1428542052748" 
-                width="400" 
-                height="300" 
-                frameborder="0" 
-                style="border:0">
-              </iframe>
+              <div class="col-sm-8">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.516334902473!2d-79.359536!3d43.650684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x822db641d29de9dc!2sArcheo!5e0!3m2!1sen!2sca!4v1428542052748" 
+                  width="100%" 
+                  height="350" 
+                  frameborder="0" 
+                  style="border:0">
+                </iframe>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="where_to_stay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Where do I Stay?</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
             </div>
 
             <div class="row">
-              <iframe class="map" 
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.516334902473!2d-79.359536!3d43.650684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x822db641d29de9dc!2sArcheo!5e0!3m2!1sen!2sca!4v1428542052748" 
-                width="400" 
-                height="300" 
-                frameborder="0" 
-                style="border:0">
-              </iframe>
-              <div class="col-sm-5 col-sm-offset-1">
+              <div class="col-sm-4">
                 <h1 class="title">The Radisson</h1>
                 <div class="description">
-                  <h1 class="title">Holiday Inn</h1>
+                  <h3 class="title">Option 1</h3>
                   <p>
                     Nightly price and how to book
                   </p>
@@ -241,12 +238,47 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                   
                 </div>
               </div>
+              <div class="col-sm-8">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16890.581980338706!2d-79.3828778030917!3d43.63806228168532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x42ec8b943f3724d5!2sRadisson+Hotel+Admiral+Toronto-Harbourfront!5e0!3m2!1sen!2sus!4v1440526164464" 
+                  width="100%" 
+                  height="350" 
+                  frameborder="0" 
+                  style="border:0" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                <h1 class="title">Hotel 2</h1>
+                <div class="description">
+                  <h3 class="title">Option 2</h3>
+                  <p>
+                    This will be where I describe where there is parking, and what are common ways
+                    to get here.
+                  </p>
+                  <p>
+                    Also I will describe what the place looks like and how to find it
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-8">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11547.516334902473!2d-79.359536!3d43.650684!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x822db641d29de9dc!2sArcheo!5e0!3m2!1sen!2sca!4v1428542052748" 
+                  width="100%" 
+                  height="350" 
+                  frameborder="0" 
+                  style="border:0">
+                </iframe>
+              </div>
             </div>
 
         </div>
     </section>
 
-    <section id="faq">
+    <section id="faq"  class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -255,6 +287,41 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                 </div>
             </div>
             <div class="row">
+              
+              <div class="col-sm-4">
+                <h3>This is a questions?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                </p>
+              </div>
+
+              <div class="col-sm-4">
+                <h3>This is a questions?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                </p>
+              </div>
+
+              <div class="col-sm-4">
+                <h3>This is a questions?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                </p>
+              </div>
+
+              <div class="col-sm-4">
+                <h3>This is a questions?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                </p>
+              </div>
+
+              <div class="col-sm-4">
+                <h3>This is a questions?</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                </p>
+              </div>
             </div>
         </div>
     </section>
@@ -326,6 +393,15 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
             </div>
         </div>
     </footer>
+ 
+    <div class="modal fade" id="PhotoBoxModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -338,12 +414,15 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.js"></script>
 
+    <!-- Photos -->
+    <script src="js/ekko-lightbox.min.js"></script>
+
     <!-- rsvp Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/rsvp.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

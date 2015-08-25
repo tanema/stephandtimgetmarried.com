@@ -1,0 +1,14 @@
+imagefolder: /img/gallery
+images:
+- name: dreams.png
+  text: this is a image
+- name: escape.png
+  text: this is a image
+- name: golden.png
+  text: this is a image
+- name: roundicons.png
+  text: this is a image
+- name: startup-framework.png
+  text: this is a image
+- name: treehouse.png
+  text: this is a image

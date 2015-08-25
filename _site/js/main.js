@@ -13,6 +13,11 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+      event.preventDefault();
+      return $(this).ekkoLightbox();
+    });
 });
 
 // Highlight the top nav as scrolling occurs
