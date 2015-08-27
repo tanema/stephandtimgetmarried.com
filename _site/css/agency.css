@@ -290,6 +290,10 @@ header .intro-text .intro-lead-in {
     line-height: 22px;
 }
 
+header .intro-text .intro-lead-in.toronto {
+    font-size: 30px;
+}
+
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
@@ -653,7 +657,7 @@ section#rsvp .form-group input.form-control {
 }
 
 section#rsvp .form-group textarea.form-control {
-    height: 153px;
+    height: 193px;
 }
 
 section#rsvp .form-group label {
@@ -744,4 +748,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #f4e03f;
+}
+
+#about_us {
+  background-color: #333751;
+  color: white;
 }

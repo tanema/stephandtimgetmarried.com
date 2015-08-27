@@ -7,15 +7,20 @@ $(function() {
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
+            //protect from spammers
+            if($("input#_gotcha").val() != ""){
+              return;
+            }
             // get values from FORM
             var form_data = {
+              subject: "Wedding RSVP",
               name: $("input#name").val(),
               rsvp: $('input[name=rsvp]:checked').val(),
-              plusone: (!!($("input#plusone:checked").val()) ? "Yes" : "No"),
+              guestnames: $('input#guestnames').val(),
               dietary_concerns: $("input#dietary_concerns").val(),
               songs: $("input#songs").val(),
               message: $("textarea#message").val(),
-            }
+            };
 
             $.ajax({
                 url: "//formspree.io/stephandtimgetmarried@gmail.com",
