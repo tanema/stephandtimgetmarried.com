@@ -17,7 +17,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Photo modal -->
-    <link href="css/ekko-lightbox.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
@@ -70,7 +70,7 @@
                         <a class="page-scroll" href="#registry">Registry</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#venue">Festivities</a>
+                        <a class="page-scroll" href="#venue">Venue</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#where_to_stay">Where To Stay</a>
@@ -92,8 +92,14 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Steph & Tim</div>
-                <div class="intro-lead-in">07.16.16</div>
+                <div class="intro-heading">
+                  Steph 
+                  <span class="amp">&</span> 
+                  Tim
+                </div>
+                <div class="intro-lead-in">
+                  07 . 16 . 16
+                </div>
                 <div class="intro-lead-in toronto">Toronto</div>
                 <a href="#rsvp" class="page-scroll btn btn-xl">RSVP</a>
             </div>
@@ -127,19 +133,18 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Photos of Us.</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">
+                      A few glimpses at our loveliness.
+                    </h3>
                 </div>
             </div>
 
             <div class="row image-grid">
               {% for image in site.data.gallery.images %}
-              <div class="col-sm-4 image-grid-item">
-                <a href="{{ site.data.gallery.imagefolder }}/{{ image.name }}" 
-                  data-toggle="lightbox" 
-                  data-gallery="usgallery" 
-                  data-title="{{ image.text }}" 
-                  data-parent="">
-                    <img src="{{ site.data.gallery.imagefolder }}/{{ image.name }}" class="img-responsive">
+              <div class="image-grid-item">
+                <a href="{{ site.data.gallery.imagefolder }}/{{ image }}" 
+                  data-lightbox="gallery">
+                    <img src="{{ site.data.gallery.imagefolder }}/{{ image }}" class="img-responsive">
                 </a>
               </div>
               {% endfor %}
@@ -153,30 +158,19 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Registry</h2>
-                    <h3 class="section-subheading text-muted">We love you buy us things from these places</h3>
+                    <h3 class="section-subheading text-muted">These links don't work yet but they will soon.</h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
+              {% for vendor in site.data.registry.vendors %}
+              <div class="col-md-3 col-sm-6">
+                <a href="{{ vendor.url }}" target="_blank">
+                  <img src="{{ site.data.registry.imagefolder }}/{{ vendor.image }}" 
+                       class="img-responsive img-centered" 
+                       alt="vendor.title">
+                </a>
+              </div>
+              {% endfor %}
             </div>
         </div>
     </section>
@@ -185,7 +179,7 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Festivities</h2>
+                    <h2 class="section-heading">Venue</h2>
                     <h3 class="section-subheading text-muted">Where to go on the day of.</h3>
                 </div>
             </div>
@@ -222,7 +216,9 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Where do I Stay?</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">
+                      We have booked a few block for your convienience. Please book your rooms early.
+                    </h3>
                 </div>
             </div>
 
@@ -230,7 +226,6 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
               <div class="col-sm-4">
                 <h1 class="title">The Radisson</h1>
                 <div class="description">
-                  <h3 class="title">Option 1</h3>
                   <p>
                     Nightly price and how to book
                   </p>
@@ -254,9 +249,8 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
 
             <div class="row">
               <div class="col-sm-4">
-                <h1 class="title">The Westin Harbour Castle</h1>
+                <h1 class="title">Hotel Novotel</h1>
                 <div class="description">
-                  <h3 class="title">Option 2</h3>
                   <p>
                     This will be where I describe where there is parking, and what are common ways
                     to get here.
@@ -268,7 +262,7 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
               </div>
               <div class="col-sm-8">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.346249226854!2d-79.37557199999999!3d43.640964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb2a3431ec1f%3A0xc9c3571760440328!2sThe+Westin+Harbour+Castle%2C+Toronto!5e0!3m2!1sen!2sus!4v1440541042089" 
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9315.554616347394!2d-79.37545506907179!3d43.64523060210561!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa04ee9d2ab5a4fb9!2sHotel+Novotel+Toronto+Centre!5e0!3m2!1sen!2sus!4v1442278343546" 
                   width="100%" 
                   height="350" 
                   frameborder="0" 
@@ -342,7 +336,7 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Name(s) on Invitation*" id="name" required data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -354,7 +348,7 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                                   </label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Guest Name(s) *" id="guestnames" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Guest Name(s) if Applicable" id="guestnames">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
@@ -386,7 +380,7 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <span class="copyright">Copyright &copy; stephandtimgetmarried.com 2015</span>
                 </div>
             </div>
@@ -415,7 +409,8 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
     <script src="js/cbpAnimatedHeader.js"></script>
 
     <!-- Photos -->
-    <script src="js/ekko-lightbox.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/freewall.min.js"></script>
 
     <!-- rsvp Form JavaScript -->
     <script src="js/jquery.steps.min.js"></script>

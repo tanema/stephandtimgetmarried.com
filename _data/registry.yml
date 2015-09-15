@@ -1,0 +1,16 @@
+imagefolder: /img/vendors
+vendors:
+- url: http://google.com
+  title: google
+  image: designmodo.jpg
+- url: http://google.com
+  title: google
+  image: envato.jpg
+- url: http://google.com
+  title: google
+  image: themeforest.jpg
+- url: http://google.com
+  title: google
+  image: creative-market.jpg
+
+

@@ -14,9 +14,26 @@ $(function() {
         event.preventDefault();
     });
 
-    $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-      event.preventDefault();
-      return $(this).ekkoLightbox();
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices': true
+    })
+
+    var wall = new freewall(".image-grid");
+    wall.reset({
+      selector: '.image-grid-item',
+      animate: true,
+      cellW: 150,
+      cellH: 'auto',
+      onResize: function() {
+        wall.fitWidth();
+      }
+    });
+
+    var images = wall.container.find('.image-grid-item');
+    images.find('img').load(function() {
+      wall.fitWidth();
     });
 });
 
