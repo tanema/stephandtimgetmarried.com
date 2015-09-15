@@ -764,3 +764,12 @@ body {
   font-weight: normal;
 }
 
+.contact a, .contact a:hover {
+  color: #0096FF;
+}
+
+.contact .phone {
+  float: right;
+}
+  
+
