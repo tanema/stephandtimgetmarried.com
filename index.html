@@ -119,11 +119,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo co
 
 Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tincidunt luctus. Aliquam scelerisque tellus libero, sed placerat diam tempus nec. Integer pulvinar, magna et fermentum gravida, orci felis cursus libero, vitae tristique orci mi a nisi. Sed luctus semper dui. Aliquam vel tincidunt magna. Nam posuere, est sit amet cursus iaculis, lectus dolor vulputate libero, ac viverra turpis mi vitae metus. Fusce quis lectus in erat imperdiet porta.
 
-Suspendisse potenti. Maecenas odio orci, porta ut tempus non, suscipit in risus. Etiam magna ex, maximus at augue non, bibendum pretium sem. Etiam diam eros, tempus ac nunc semper, pulvinar blandit turpis. Donec at egestas erat. Sed porta enim ut accumsan efficitur. Ut feugiat ipsum vel efficitur sodales. Quisque elementum porta placerat. Cras eleifend libero id neque vulputate, nec rhoncus diam malesuada. Aenean nec odio faucibus, faucibus odio scelerisque, laoreet enim. Pellentesque vitae est at dolor finibus suscipit. Maecenas sed luctus nisl. Morbi placerat ipsum a mattis scelerisque. Etiam vitae dapibus urna. Vestibulum nisi leo, molestie nec enim in, suscipit cursus velit. Cras eu enim sit amet nunc sagittis commodo.
-
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sodales cursus sapien, sed sollicitudin turpis euismod a. Sed non metus odio. Nunc odio massa, lobortis ac gravida nec, maximus non metus. Duis pharetra fermentum massa ac mollis. Fusce pulvinar leo et nisl pellentesque scelerisque. Etiam rutrum, urna quis malesuada congue, diam ipsum vulputate est, at finibus lorem libero vel nibh. Vestibulum aliquet ex non arcu vulputate tempor. Nullam ex nulla, facilisis id lacus id, facilisis porttitor nisi. Fusce elementum augue et hendrerit pellentesque. Curabitur euismod eleifend mi aliquam lobortis. Sed metus mauris, ultrices non nulla sit amet, commodo hendrerit tellus.
-
-Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus hendrerit nisl a faucibus. Praesent erat sapien, pharetra at orci vulputate, fringilla pharetra dui. Proin nisi augue, rutrum quis arcu ut, tincidunt ultrices nulla. Nam consectetur nulla eros, eget venenatis enim luctus ac. Sed mollis molestie felis ut tempus. Donec nec dignissim tortor, id convallis libero. Proin hendrerit turpis in congue vestibulum. Nulla tempor neque nisi, a pretium sem auctor et.
             </div>
         </div>
     </section>
@@ -161,17 +156,15 @@ Nulla a purus libero. Proin commodo vulputate purus sed lobortis. Sed faucibus h
                     <h3 class="section-subheading text-muted">These links don't work yet but they will soon.</h3>
                 </div>
             </div>
-            <div class="row">
-              {% for vendor in site.data.registry.vendors %}
-              <div class="col-md-3 col-sm-6">
-                <a href="{{ vendor.url }}" target="_blank">
-                  <img src="{{ site.data.registry.imagefolder }}/{{ vendor.image }}" 
-                       class="img-responsive img-centered" 
-                       alt="vendor.title">
+
+            <div class="row row-centered">
+              <div class="col-md-3 col-sm-6 col-centered">
+                <a href="http://www.amazon.ca/registry/wishlist/2EOU0GZIYUOW9" target="_blank">
+                  <img src="img/amazon.png" class="img-responsive img-centered" alt="vendor.title">
                 </a>
               </div>
-              {% endfor %}
             </div>
+
         </div>
     </section>
 
