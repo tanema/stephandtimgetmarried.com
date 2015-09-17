@@ -17,14 +17,12 @@ $(function() {
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true,
-      'alwaysShowNavOnTouchDevices': true
     })
 
     var wall = new freewall(".image-grid");
     wall.reset({
       selector: '.image-grid-item',
-      animate: true,
-      cellW: 150,
+      cellW: 100,
       cellH: 'auto',
       onResize: function() {
         wall.fitWidth();
@@ -35,6 +33,9 @@ $(function() {
     images.find('img').load(function() {
       wall.fitWidth();
     });
+    setTimeout(function(){
+      wall.fitWidth();
+    }, 3000);
 });
 
 // Highlight the top nav as scrolling occurs

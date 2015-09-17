@@ -111,14 +111,17 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About Us.</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">This is a peek, that is all you get.</h3>
                 </div>
             </div>
             <div class="row text-center">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
-
-Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tincidunt luctus. Aliquam scelerisque tellus libero, sed placerat diam tempus nec. Integer pulvinar, magna et fermentum gravida, orci felis cursus libero, vitae tristique orci mi a nisi. Sed luctus semper dui. Aliquam vel tincidunt magna. Nam posuere, est sit amet cursus iaculis, lectus dolor vulputate libero, ac viverra turpis mi vitae metus. Fusce quis lectus in erat imperdiet porta.
-
+              <div class="col-lg-12 text-center">
+                Steph and Tim met in first year of university. They were good friends for most of university but it wasn't until 4th year that the spark was lit.
+                They travelled across the planet together and spent a year together in austrailia until coming home later to get back to life. Steph went of to get her masters 
+                and Tim started the in the working world. They moved to toronto in later on and began deciding where the dishes went together. Ups and downs, lefts and rights,
+                good and bad, they have come out victorious as a beautiful couple who are ready to share a great day with you. If you happen upon this website and were
+                invited to thier wedding, that mean that they love and cherish you. They hope you can make it on thier special day.
+              </div>
             </div>
         </div>
     </section>
@@ -137,9 +140,9 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
             <div class="row image-grid">
               {% for image in site.data.gallery.images %}
               <div class="image-grid-item">
-                <a href="{{ site.data.gallery.imagefolder }}/{{ image }}" 
+                <a href="{{ site.data.gallery.imagefolder }}/large/{{ image }}" 
                   data-lightbox="gallery">
-                    <img src="{{ site.data.gallery.imagefolder }}/{{ image }}" class="img-responsive">
+                    <img src="{{ site.data.gallery.imagefolder }}/small/{{ image }}" class="img-responsive">
                 </a>
               </div>
               {% endfor %}
@@ -153,7 +156,7 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Registry</h2>
-                    <h3 class="section-subheading text-muted">These links don't work yet but they will soon.</h3>
+                    <h3 class="section-subheading text-muted">If you feel so inclined.</h3>
                 </div>
             </div>
 
@@ -189,7 +192,10 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
                     <a href="http://www.archeo.ca/" class="website">www.archeo.ca</a>
                   </p>
                   <p>
-                  Combining an open plan and welcoming hospitality, Archeo is the restaurant equivalent of the urban loft apartment. High yellow pine ceilings, concrete floors, exposed brick walls and the reclaimed timber bar and tables are a perfect blend of contemporary style and historic tradition. Large scale photographs of on-site heritage architecture by artist Steven Evans are novel room dividers lending the large open-concept room a sense of relaxed intimacy.
+                    Combining an open plan and welcoming hospitality, Archeo is the restaurant equivalent of the urban loft apartment. High yellow pine ceilings, concrete floors, exposed brick walls and the reclaimed timber bar and tables are a perfect blend of contemporary style and historic tradition. Large scale photographs of on-site heritage architecture by artist Steven Evans are novel room dividers lending the large open-concept room a sense of relaxed intimacy.
+                  </p>
+                  <p>
+                    There is underground green P parking on Distillery Lane, just south of the venue.
                   </p>
                 </div>
               </div>
@@ -228,7 +234,7 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
                     <a href="http://www.radisson.com/toronto-hotel-on-m5j2n5/ontoront" class="website">www.radisson.com/m5j2n5</a>
                   </p>
                   <p> 
-                  Beautiful hotel right on the waterfront.
+                  Beautiful hotel right on the waterfront, with a nice rooftop restaurant.
                   </p>
                   
                 </div>
@@ -255,7 +261,7 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
                     <a href="http://www.novotel.com/gb/hotel-0931-novotel-toronto-centre/index.shtml" class="website">www.novotel.com/tor</a>
                   </p>
                   <p> 
-                  Convienient location right by union and the hockey hall of fame.
+                  Convienient location right by union and the hockey hall of fame. Closer to the venue and younge street.
                   </p>
                 </div>
               </div>
@@ -284,37 +290,38 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
             <div class="row">
               
               <div class="col-sm-4">
-                <h3>This is a questions?</h3>
+                <h3>What are some places to see?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                  Eaton centre, hockey hall of fame, skydome, cn towner, aquarium.
                 </p>
               </div>
 
               <div class="col-sm-4">
-                <h3>This is a questions?</h3>
+                <h3>Recommend good restaurants?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                  Tutti Matti, Momofuku, Burgers Preist, El Catrin, El Trompo 
                 </p>
               </div>
 
               <div class="col-sm-4">
-                <h3>This is a questions?</h3>
+                <h3>How can I get to the venue?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                  From both hotels a cab ride should be around 10$ or under depending on traffic.
                 </p>
               </div>
 
               <div class="col-sm-4">
-                <h3>This is a questions?</h3>
+                <h3>What if I am not staying in a hotel?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                  We recommend you take a Go train into toronto to skip traffic and to make it easier for a responsible commute home.
+                  A cab from Union station would be around 10$ to 15$ dollars.
                 </p>
               </div>
 
               <div class="col-sm-4">
-                <h3>This is a questions?</h3>
+                <h3>Do you guys really love each other?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, justo consequat efficitur venenatis, ex augue commodo urna, quis lacinia tellus purus a ante. Duis luctus, nunc ac blandit aliquet, dui nisl sodales metus, sed tincidunt sem tortor vel est. Aenean tempus finibus ipsum a pellentesque. Pellentesque nunc quam, sagittis ut odio non, cursus condimentum augue. Pellentesque quis libero dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam feugiat tellus eget ultricies tempus. Curabitur feugiat mi a orci auctor condimentum. Sed blandit ipsum in massa dapibus rhoncus. Quisque odio velit, vehicula vitae mi in, feugiat ornare velit. Vivamus justo velit, ornare vitae porta quis, lacinia vitae augue.
+                  No we are secretly spys and this is our domestic cover story.
                 </p>
               </div>
             </div>
