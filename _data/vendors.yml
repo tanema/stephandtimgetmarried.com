@@ -1,0 +1,9 @@
+imagefolder: /img/vendors
+sources:
+- image: amazon.png
+  url: http://www.amazon.ca/registry/wishlist/2EOU0GZIYUOW9
+- image: bed-bath.png
+  url: http://www.bedbathandbeyond.ca/store/giftregistry/view_registry_guest.jsp?registryId=542654295&eventType=Wedding&pwsurl=%3Fmcid%3DEM_triggeredem_emailregistryplural__allpromos
+- image: travelers-joy.jpeg
+  url: http://www.travelersjoy.com/stephplustim
+

@@ -158,11 +158,13 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
             </div>
 
             <div class="row row-centered">
-              <div class="col-md-3 col-sm-6 col-centered">
-                <a href="http://www.amazon.ca/registry/wishlist/2EOU0GZIYUOW9" target="_blank">
-                  <img src="img/amazon.png" class="img-responsive img-centered" alt="vendor.title">
+              {% for vendor in site.data.vendors.sources %}
+              <div class="col-md-3 col-sm-6 col-centered vendor">
+                <a href="{{ vendor.url }}" target="_blank">
+                    <img src="{{ site.data.vendors.imagefolder }}/{{ vendor.image }}" class="img-responsive">
                 </a>
               </div>
+              {% endfor %}
             </div>
 
         </div>
@@ -320,6 +322,10 @@ Nam auctor nulla eu massa congue, ut iaculis justo dictum. Nullam fermentum tinc
     </section>
     
     <section id="rsvp">
+        <div class="coming-soon">
+          <h1>Coming Soon</h1>
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

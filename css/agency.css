@@ -783,3 +783,39 @@ body {
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+.vendor {
+  height: 62px;
+  width: 200px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.vendor img {
+  margin-top: 6px;
+}
+
+#rsvp {
+  position: relative;
+}
+
+.coming-soon {
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 50px;
+  right: 50px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  z-index: 1;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.coming-soon h1 {
+  font-size: 100px;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
