@@ -865,6 +865,11 @@ body {
   color: #0096FF;
 }    
 
+#faq ul {
+  padding-left: 20px;
+  font-size: 17px;
+}
+
 #radisson_map{
   margin-bottom: 25px;
 }
