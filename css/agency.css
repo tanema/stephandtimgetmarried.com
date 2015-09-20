@@ -31,7 +31,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.75;
 }
 
@@ -354,7 +354,7 @@ section h3.section-subheading {
     margin-bottom: 50px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-style: italic;
     font-weight: 400;
 }
