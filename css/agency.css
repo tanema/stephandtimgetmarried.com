@@ -783,6 +783,13 @@ body {
   color: #0096FF;
 }
 
+@media(max-width: 1199px) {
+  .contact a, .contact a:hover {
+    display: block;
+    float: none !important;
+  }
+}
+
 .contact .phone {
   float: right;
 }
