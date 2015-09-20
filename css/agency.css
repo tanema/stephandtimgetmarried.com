@@ -857,3 +857,7 @@ body {
 #faq a, #faq a:hover {
   color: #0096FF;
 }    
+
+#radisson_map{
+  margin-bottom: 25px;
+}
