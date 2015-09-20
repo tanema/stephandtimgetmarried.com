@@ -853,3 +853,7 @@ body {
 .map a, .map a:hover {
   color: #0096FF;
 }
+
+#faq a, #faq a:hover {
+  color: #0096FF;
+}    
