@@ -13,6 +13,7 @@ $(function() {
             }
             // get values from FORM
             var form_data = {
+              _cc: "timanema@gmail.com",
               subject: "Wedding RSVP",
               name: $("input#name").val(),
               rsvp: $('input[name=rsvp]:checked').val(),
