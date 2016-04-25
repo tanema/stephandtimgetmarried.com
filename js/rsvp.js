@@ -25,8 +25,9 @@ $(function() {
 
             $.ajax({
                 url: "//formspree.io/stephandtimgetmarried@gmail.com",
-                type: "POST",
+                method: "POST",
                 data: form_data,
+                dataType: "json",
                 cache: false,
                 success: function() {
                     // Success message
