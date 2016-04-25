@@ -666,6 +666,10 @@ section#rsvp .form-group textarea {
     padding: 20px;
 }
 
+section#rsvp .form-group.rsvpyesno label {
+    margin-left: 10px;
+}
+
 section#rsvp .form-group input.form-control {
     height: auto;
 }

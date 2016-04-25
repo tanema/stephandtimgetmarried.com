@@ -1,7 +1,6 @@
 name: Steph and Tim get Married
 url: http://stephandtimgetmarried.com
 
-pygments: true
 timezone: America/Toronto
 exclude: ["Gemfile", "Gemfile.lock"]
 
